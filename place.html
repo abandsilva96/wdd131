@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Dublin, Ireland, with information about the city, local data, and weather conditions.">
+    <meta name="author" content="Abner Goncalves">
+
+    <title>Dublin, Ireland | WDD 131</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Dublin, Ireland</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/dublin-small.webp" media="(max-width: 600px)">
+                <img src="images/dublin-large.webp"
+                     alt="View of Dublin, Ireland"
+                     width="1200"
+                     height="801">
+            </picture>
+
+            <section class="data">
+                <h2>Data</h2>
+
+                <div class="info-grid">
+                    <span class="label">Area:</span>
+                    <span>117.8 km²</span>
+
+                    <span class="label">Population:</span>
+                    <span>592,713</span>
+
+                    <span class="label">Country:</span>
+                    <span>Ireland</span>
+
+                    <span class="label">Languages:</span>
+                    <span>English, Irish</span>
+
+                    <span class="label">Currency:</span>
+                    <span>Euro (€)</span>
+
+                    <span class="label">Time Zone:</span>
+                    <span>GMT / IST</span>
+
+                    <span class="label">Calling Code:</span>
+                    <span>+353</span>
+
+                    <span class="label">Internet TLD:</span>
+                    <span>.ie</span>
+                </div>
+            </section>
+
+            <section class="weather">
+                <h2>Weather</h2>
+
+                <img class="weather-icon"
+                     src="images/weatherIcon.svg"
+                     alt="Partly cloudy weather icon"
+                     width="80"
+                     height="80">
+
+                <div class="info-grid">
+                    <span class="label">Temperature:</span>
+                    <span>8 °C</span>
+
+                    <span class="label">Conditions:</span>
+                    <span>Partly Cloudy</span>
+
+                    <span class="label">Wind:</span>
+                    <span>15 km/h</span>
+
+                    <span class="label">Wind Chill:</span>
+                    <span id="windchill"></span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <span id="currentyear"></span> | Abner Goncalves | Dublin, Ireland
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
