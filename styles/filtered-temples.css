@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #4b176d;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+header span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#menu {
+    display: block;
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+nav.open a {
+    display: block;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #4b176d;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0 2rem;
+    color: #222;
+}
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.temple-grid section {
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.temple-grid h2 {
+    color: #4b176d;
+    margin-bottom: 1rem;
+}
+
+.temple-grid p {
+    margin: 0.4rem 0;
+    font-size: 0.9rem;
+}
+
+.temple-grid img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 1rem auto 0;
+}
+
+footer {
+    background-color: #4b176d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem;
+}
+
+#lastModified {
+    color: #ffd966;
+}

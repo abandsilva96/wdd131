@@ -1,0 +1,31 @@
+@media screen and (min-width: 640px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.75rem 1rem;
+    }
+
+    main {
+        max-width: 1000px;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}
