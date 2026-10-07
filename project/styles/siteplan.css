@@ -1,0 +1,176 @@
+:root {
+    --navy: #0b132b;
+    --cyan: #5bc0eb;
+    --off-white: #f5f7fa;
+    --dark-text: #172033;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--off-white);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: var(--navy);
+    color: var(--off-white);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0 0 0.5rem;
+    color: var(--cyan);
+}
+
+header p {
+    margin: 0;
+}
+
+/* Typography */
+
+h1,
+h2,
+.orbitron-example {
+    font-family: "Orbitron", sans-serif;
+}
+
+h2 {
+    color: var(--navy);
+    border-bottom: 3px solid var(--cyan);
+    padding-bottom: 0.5rem;
+}
+
+/* Main Content */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+/* Color Schema */
+
+.color-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.color-card {
+    padding: 1.5rem;
+    border: 1px solid #777;
+    border-radius: 8px;
+}
+
+.navy {
+    background-color: var(--navy);
+    color: var(--off-white);
+}
+
+.cyan {
+    background-color: var(--cyan);
+    color: var(--navy);
+}
+
+.white {
+    background-color: var(--off-white);
+    color: var(--dark-text);
+}
+
+/* Wireframes */
+
+.wireframes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.wireframe {
+    border: 3px solid var(--navy);
+    background-color: white;
+    text-align: center;
+}
+
+.wireframe > div {
+    border-bottom: 1px solid var(--navy);
+    padding: 1rem;
+}
+
+.wireframe > div:last-child {
+    border-bottom: none;
+}
+
+.mobile {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.hero-box {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wireframe-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.desktop-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.desktop-content span {
+    padding: 2rem 1rem;
+    border: 1px dashed var(--navy);
+}
+
+.particle-layout {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--navy);
+    color: var(--off-white);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Larger Screens */
+
+@media screen and (min-width: 700px) {
+    .color-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .wireframes {
+        grid-template-columns: 1fr 2fr;
+        align-items: start;
+    }
+}
