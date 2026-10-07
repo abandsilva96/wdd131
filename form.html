@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product review form for WDD 131">
+    <meta name="author" content="Abner Goncalves">
+
+    <title>Product Review Form</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+
+            <!-- Product Name -->
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+
+                <div class="rating">
+                    <label for="rating1">
+                        &star;
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                    </label>
+
+                    <label for="rating2">
+                        &star;&star;
+                        <input type="radio" id="rating2" name="rating" value="2" required>
+                    </label>
+
+                    <label for="rating3">
+                        &star;&star;&star;
+                        <input type="radio" id="rating3" name="rating" value="3" required>
+                    </label>
+
+                    <label for="rating4">
+                        &star;&star;&star;&star;
+                        <input type="radio" id="rating4" name="rating" value="4" required>
+                    </label>
+
+                    <label for="rating5">
+                        &star;&star;&star;&star;&star;
+                        <input type="radio" id="rating5" name="rating" value="5" required>
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="installation">Date of Installation</label>
+            <input
+                type="date"
+                id="installation"
+                name="installation"
+                required
+            >
+
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>
+                    Which features did you find useful?
+                    <span class="optional">(Check all that apply)</span>
+                </legend>
+
+                <label for="durability">
+                    <input
+                        type="checkbox"
+                        id="durability"
+                        name="features"
+                        value="durability"
+                    >
+                    Durability
+                </label>
+
+                <label for="ease-of-use">
+                    <input
+                        type="checkbox"
+                        id="ease-of-use"
+                        name="features"
+                        value="ease-of-use"
+                    >
+                    Ease of Use
+                </label>
+
+                <label for="performance">
+                    <input
+                        type="checkbox"
+                        id="performance"
+                        name="features"
+                        value="performance"
+                    >
+                    Performance
+                </label>
+
+                <label for="design">
+                    <input
+                        type="checkbox"
+                        id="design"
+                        name="features"
+                        value="design"
+                    >
+                    Design
+                </label>
+            </fieldset>
+
+            <!-- Written Review -->
+            <label for="review">
+                Written Review
+                <span class="optional">(Optional)</span>
+            </label>
+
+            <textarea
+                id="review"
+                name="review"
+                rows="6"
+            ></textarea>
+
+            <!-- User Name -->
+            <label for="username">
+                Your Name
+                <span class="optional">(Optional)</span>
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                name="username"
+            >
+
+            <!-- Submit -->
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | Abner Goncalves | Ireland
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
