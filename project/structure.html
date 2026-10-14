@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn about atomic structure, protons, neutrons, electrons, atomic numbers, isotopes, and ions with Inside the Atom.">
+    <meta name="author" content="Abner Goncalves">
+
+    <title>Atomic Structure | Inside the Atom</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo"
+                aria-label="Inside the Atom homepage">
+                <span class="logo-symbol" aria-hidden="true">⚛</span>
+                <span>Inside the Atom</span>
+            </a>
+
+            <button id="menu-button" class="menu-button"
+                type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="primary-navigation">
+                ☰
+            </button>
+
+            <nav id="primary-navigation" aria-label="Main navigation">
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="structure.html" aria-current="page">
+                            Atomic Structure
+                        </a>
+                    </li>
+                    <li><a href="build.html">Build an Atom</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="section-container">
+                <p class="eyebrow">Understanding Matter</p>
+                <h1>Atomic Structure</h1>
+                <p>
+                    Discover the particles inside atoms, how they
+                    are arranged, and what makes each chemical
+                    element unique.
+                </p>
+            </div>
+        </section>
+
+        <section class="introduction section-container"
+            aria-labelledby="structure-heading">
+            <div class="section-heading">
+                <p class="eyebrow">Inside an Atom</p>
+                <h2 id="structure-heading">How Is an Atom Structured?</h2>
+            </div>
+
+            <div class="introduction-grid">
+                <div class="introduction-image">
+                    <img src="images/atomic-structure.jpg"
+                        alt="Diagram showing protons and neutrons in the nucleus with electrons surrounding it"
+                        width="600" height="450"
+                        loading="lazy">
+                </div>
+
+                <div class="introduction-content">
+                    <p>
+                        An atom consists of a small, dense nucleus
+                        surrounded by a region occupied by electrons.
+                        Although the nucleus contains almost all
+                        of the atom's mass, it occupies only a tiny
+                        fraction of the atom's total volume.
+                    </p>
+
+                    <p>
+                        The nucleus contains positively charged
+                        protons and, in most atoms, electrically
+                        neutral neutrons. Negatively charged
+                        electrons exist in regions called orbitals
+                        around the nucleus.
+                    </p>
+
+                    <p>
+                        Electrons do not travel around the nucleus
+                        in fixed circular paths like planets.
+                        Instead, quantum mechanics describes their
+                        locations using probability distributions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="particles-section"
+            aria-labelledby="particle-details-heading">
+            <div class="section-container">
+                <div class="section-heading centered">
+                    <p class="eyebrow">The Fundamental Components</p>
+                    <h2 id="particle-details-heading">
+                        Meet the Subatomic Particles
+                    </h2>
+                    <p>
+                        Three types of particles are essential
+                        for understanding ordinary atomic structure.
+                    </p>
+                </div>
+
+                <div class="particle-grid">
+                    <article class="particle-card">
+                        <div class="particle-icon proton-icon"
+                            aria-hidden="true">+</div>
+                        <h3>Protons</h3>
+                        <p>
+                            Protons carry a positive electric
+                            charge and are located inside the
+                            atomic nucleus.
+                        </p>
+                        <p>
+                            The number of protons determines
+                            the identity of the element.
+                        </p>
+                        <p class="particle-detail">
+                            Relative charge: +1
+                        </p>
+                    </article>
+
+                    <article class="particle-card">
+                        <div class="particle-icon neutron-icon"
+                            aria-hidden="true">N</div>
+                        <h3>Neutrons</h3>
+                        <p>
+                            Neutrons have no electric charge
+                            and are found in the nuclei of
+                            most atoms.
+                        </p>
+                        <p>
+                            Different numbers of neutrons
+                            create different isotopes of
+                            the same element.
+                        </p>
+                        <p class="particle-detail">
+                            Relative charge: 0
+                        </p>
+                    </article>
+
+                    <article class="particle-card">
+                        <div class="particle-icon electron-icon"
+                            aria-hidden="true">−</div>
+                        <h3>Electrons</h3>
+                        <p>
+                            Electrons have a negative electric
+                            charge and occupy orbitals
+                            around the nucleus.
+                        </p>
+                        <p>
+                            Their arrangement influences how
+                            atoms interact and form
+                            chemical bonds.
+                        </p>
+                        <p class="particle-detail">
+                            Relative charge: −1
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container"
+            aria-labelledby="atomic-number-heading">
+            <div class="section-heading">
+                <p class="eyebrow">Identifying Elements</p>
+                <h2 id="atomic-number-heading">
+                    Atomic Number and Mass Number
+                </h2>
+            </div>
+
+            <div class="information-grid">
+                <article class="information-card">
+                    <h3>Atomic Number</h3>
+                    <p>
+                        The atomic number is the number of
+                        protons in an atom's nucleus.
+                        Every element has its own unique
+                        atomic number.
+                    </p>
+                    <p>
+                        For example, carbon has six protons,
+                        so its atomic number is 6.
+                    </p>
+                </article>
+
+                <article class="information-card">
+                    <h3>Mass Number</h3>
+                    <p>
+                        The mass number is the total number
+                        of protons and neutrons in an
+                        atom's nucleus.
+                    </p>
+                    <p>
+                        A carbon atom with six protons
+                        and six neutrons has a mass
+                        number of 12.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="concepts-section"
+            aria-labelledby="concepts-heading">
+            <div class="section-container">
+                <div class="section-heading centered">
+                    <p class="eyebrow">When Atoms Change</p>
+                    <h2 id="concepts-heading">Isotopes and Ions</h2>
+                    <p>
+                        Atoms of the same element can differ
+                        in their numbers of neutrons or electrons.
+                    </p>
+                </div>
+
+                <div class="information-grid">
+                    <article class="information-card">
+                        <h3>What Are Isotopes?</h3>
+                        <p>
+                            Isotopes are atoms of the same
+                            element that have different
+                            numbers of neutrons.
+                        </p>
+                        <p>
+                            Carbon-12 and carbon-14 both
+                            contain six protons, but
+                            carbon-12 has six neutrons
+                            while carbon-14 has eight.
+                        </p>
+                    </article>
+
+                    <article class="information-card">
+                        <h3>What Are Ions?</h3>
+                        <p>
+                            An ion is an atom or group of
+                            atoms with a net electric charge.
+                        </p>
+                        <p>
+                            When a neutral atom loses
+                            electrons, it becomes positively
+                            charged. When it gains electrons,
+                            it becomes negatively charged.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore-section section-container"
+            aria-labelledby="builder-heading">
+            <div class="explore-content">
+                <p class="eyebrow">Put Your Knowledge Into Practice</p>
+                <h2 id="builder-heading">Ready to Build an Atom?</h2>
+                <p>
+                    Now that you understand atomic structure,
+                    try changing the numbers of protons,
+                    neutrons, and electrons yourself.
+                </p>
+                <p>
+                    Our interactive atom builder will
+                    identify the element, calculate its
+                    mass number, and show its electric charge.
+                </p>
+                <a href="build.html" class="button primary-button">
+                    Build Your Atom
+                </a>
+            </div>
+
+            <div class="explore-visual">
+                <img src="images/build-atom.jpg"
+                    alt="Illustration of atomic particles used to build an atom"
+                    width="500" height="400"
+                    loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="footer-brand">Inside the Atom</p>
+            <p>
+                Explore the science behind the building blocks of matter.
+            </p>
+
+            <p>
+                &copy; <span id="currentyear"></span>
+                | Abner Goncalves | WDD 131
+            </p>
+
+            <p id="lastModified"></p>
+
+            <p>
+                <a href="references.html">References</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

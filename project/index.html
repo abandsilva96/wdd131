@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the fascinating world of atoms. Learn about protons, neutrons, electrons, and the building blocks of matter.">
+    <meta name="author" content="Abner Goncalves">
+
+    <title>Inside the Atom | Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Inside the Atom homepage">
+                <span class="logo-symbol" aria-hidden="true">⚛</span>
+                <span>Inside the Atom</span>
+            </a>
+
+            <button id="menu-button" class="menu-button"
+                type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="primary-navigation">
+                ☰
+            </button>
+
+            <nav id="primary-navigation" aria-label="Main navigation">
+                <ul class="navigation">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="structure.html">Atomic Structure</a></li>
+                    <li><a href="build.html">Build an Atom</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Explore the Science of Matter</p>
+                <h1>Discover the World of Atoms</h1>
+                <p>
+                    Everything around us is made of matter, and atoms
+                    are its fundamental building blocks. Discover
+                    the tiny particles that make up our universe.
+                </p>
+                <a href="structure.html" class="button primary-button">
+                    Start Exploring
+                </a>
+            </div>
+
+            <div class="hero-visual">
+                <img src="images/atom-hero.jpg"
+                    alt="Illustration of an atom with a nucleus and surrounding electrons"
+                    width="600" height="600"
+                    fetchpriority="high">
+            </div>
+        </section>
+
+        <section class="introduction section-container"
+            aria-labelledby="introduction-heading">
+            <div class="section-heading">
+                <p class="eyebrow">The Building Blocks of Matter</p>
+                <h2 id="introduction-heading">What Is an Atom?</h2>
+            </div>
+
+            <div class="introduction-grid">
+                <div class="introduction-image">
+                    <img src="images/atomic-structure.jpg"
+                        alt="Educational diagram showing an atomic nucleus and electrons"
+                        width="600" height="450"
+                        loading="lazy">
+                </div>
+
+                <div class="introduction-content">
+                    <p>
+                        An atom is the smallest unit of a chemical
+                        element that retains the identity of that
+                        element. Atoms are incredibly small, yet
+                        they form the foundation of the physical
+                        world around us.
+                    </p>
+
+                    <p>
+                        Each atom contains a central nucleus made
+                        of protons and, in most atoms, neutrons.
+                        Electrons occupy regions around the nucleus
+                        called orbitals.
+                    </p>
+
+                    <p>
+                        The number of protons determines which
+                        chemical element an atom belongs to.
+                        For example, every carbon atom has six
+                        protons, while every oxygen atom has eight.
+                    </p>
+
+                    <a href="structure.html" class="text-link">
+                        Learn About Atomic Structure →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="particles-section"
+            aria-labelledby="particles-heading">
+            <div class="section-container">
+                <div class="section-heading centered">
+                    <p class="eyebrow">Three Important Particles</p>
+                    <h2 id="particles-heading">Meet the Subatomic Particles</h2>
+                    <p>
+                        Atoms contain three familiar types of
+                        subatomic particles. Each plays a different
+                        role in atomic structure.
+                    </p>
+                </div>
+
+                <div class="particle-grid">
+                    <article class="particle-card">
+                        <div class="particle-icon proton-icon" aria-hidden="true">
+                            +
+                        </div>
+                        <h3>Protons</h3>
+                        <p>
+                            Positively charged particles found
+                            in the nucleus. The number of protons
+                            determines the chemical element.
+                        </p>
+                        <p class="particle-detail">
+                            Electric charge: +1
+                        </p>
+                    </article>
+
+                    <article class="particle-card">
+                        <div class="particle-icon neutron-icon" aria-hidden="true">
+                            N
+                        </div>
+                        <h3>Neutrons</h3>
+                        <p>
+                            Electrically neutral particles found
+                            in the nucleus of most atoms. They
+                            contribute to atomic mass and
+                            nuclear stability.
+                        </p>
+                        <p class="particle-detail">
+                            Electric charge: 0
+                        </p>
+                    </article>
+
+                    <article class="particle-card">
+                        <div class="particle-icon electron-icon" aria-hidden="true">
+                            −
+                        </div>
+                        <h3>Electrons</h3>
+                        <p>
+                            Negatively charged particles that
+                            occupy orbitals around the nucleus.
+                            They play a major role in chemical
+                            bonding and reactions.
+                        </p>
+                        <p class="particle-detail">
+                            Electric charge: −1
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore-section section-container"
+            aria-labelledby="explore-heading">
+            <div class="explore-content">
+                <p class="eyebrow">Interactive Learning</p>
+                <h2 id="explore-heading">What Happens When an Atom Changes?</h2>
+                <p>
+                    Changing the number of protons can create a
+                    different element. Changing neutrons can create
+                    a different isotope, while gaining or losing
+                    electrons changes an atom's electric charge.
+                </p>
+                <p>
+                    Try our interactive atom builder to explore
+                    these changes and discover different elements.
+                </p>
+
+                <a href="build.html" class="button primary-button">
+                    Build Your Atom
+                </a>
+            </div>
+
+            <div class="explore-visual">
+                <img src="images/build-atom.jpg"
+                    alt="Illustration representing protons, neutrons, and electrons in an atom"
+                    width="500" height="400"
+                    loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="footer-brand">Inside the Atom</p>
+            <p>
+                Explore the science behind the building blocks of matter.
+            </p>
+
+            <p>
+                &copy; <span id="currentyear"></span>
+                | Abner Goncalves | WDD 131
+            </p>
+
+            <p id="lastModified"></p>
+
+            <p>
+                <a href="references.html">References</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

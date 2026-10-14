@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Build your own atom by choosing protons, neutrons, and electrons. Discover elements, isotopes, and electrical charges interactively.">
+    <meta name="author" content="Abner Goncalves">
+
+    <title>Build an Atom | Inside the Atom</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo"
+                aria-label="Inside the Atom homepage">
+                <span class="logo-symbol" aria-hidden="true">⚛</span>
+                <span>Inside the Atom</span>
+            </a>
+
+            <button id="menu-button" class="menu-button"
+                type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="primary-navigation">
+                ☰
+            </button>
+
+            <nav id="primary-navigation" aria-label="Main navigation">
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="structure.html">Atomic Structure</a></li>
+                    <li>
+                        <a href="build.html" aria-current="page">
+                            Build an Atom
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="section-container">
+                <p class="eyebrow">Interactive Science</p>
+                <h1>Build an Atom</h1>
+                <p>
+                    Experiment with protons, neutrons, and electrons
+                    to discover how atomic structure determines
+                    an element's identity, mass number, and charge.
+                </p>
+            </div>
+        </section>
+
+        <section class="section-container builder-section"
+            aria-labelledby="builder-heading">
+            <div class="section-heading centered">
+                <p class="eyebrow">Atomic Laboratory</p>
+                <h2 id="builder-heading">Create Your Atom</h2>
+                <p>
+                    Choose the number of each particle, then select
+                    Build Atom to see your results.
+                </p>
+            </div>
+
+            <div class="builder-grid">
+                <div class="builder-panel">
+                    <h3>Choose Your Particles</h3>
+
+                    <form id="atom-form">
+                        <div class="form-group">
+                            <label for="protons">Protons (+)</label>
+                            <input type="number" id="protons"
+                                name="protons" min="1" max="20"
+                                value="6" step="1" required>
+                            <small>
+                                Determines the chemical element (1–20).
+                            </small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="neutrons">Neutrons (0)</label>
+                            <input type="number" id="neutrons"
+                                name="neutrons" min="0" max="30"
+                                value="6" step="1" required>
+                            <small>
+                                Changes the isotope and mass number.
+                            </small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="electrons">Electrons (−)</label>
+                            <input type="number" id="electrons"
+                                name="electrons" min="0" max="30"
+                                value="6" step="1" required>
+                            <small>
+                                Changes the atom's electric charge.
+                            </small>
+                        </div>
+
+                        <button type="submit"
+                            class="button primary-button">
+                            Build Atom
+                        </button>
+
+                        <button type="reset"
+                            class="button secondary-button">
+                            Reset
+                        </button>
+                    </form>
+                </div>
+
+                <div class="builder-panel results-panel">
+                    <h3>Your Atom</h3>
+
+                    <div id="atom-visual"
+                        class="atom-visual"
+                        role="img"
+                        aria-label="Visual representation of the selected atom">
+                        <div class="atom-nucleus">
+                            <span id="nucleus-symbol">C</span>
+                        </div>
+                    </div>
+
+                    <div id="atom-results" aria-live="polite">
+                        <h4 id="element-name">Carbon (C)</h4>
+
+                        <div class="results-grid">
+                            <div class="result-item">
+                                <span class="result-label">
+                                    Atomic Number
+                                </span>
+                                <strong id="atomic-number">6</strong>
+                            </div>
+
+                            <div class="result-item">
+                                <span class="result-label">
+                                    Mass Number
+                                </span>
+                                <strong id="mass-number">12</strong>
+                            </div>
+
+                            <div class="result-item">
+                                <span class="result-label">
+                                    Net Charge
+                                </span>
+                                <strong id="net-charge">0</strong>
+                            </div>
+
+                            <div class="result-item">
+                                <span class="result-label">
+                                    Classification
+                                </span>
+                                <strong id="atom-classification">
+                                    Neutral Atom
+                                </strong>
+                            </div>
+                        </div>
+
+                        <p id="atom-description">
+                            Carbon is an essential element found in
+                            living organisms and many everyday materials.
+                        </p>
+                    </div>
+
+                    <button id="save-atom"
+                        type="button"
+                        class="button primary-button">
+                        Save This Atom
+                    </button>
+
+                    <p id="save-message" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="saved-section"
+            aria-labelledby="saved-heading">
+            <div class="section-container">
+                <div class="section-heading centered">
+                    <p class="eyebrow">Your Discoveries</p>
+                    <h2 id="saved-heading">Saved Atoms</h2>
+                    <p>
+                        Save the atoms you create and return to
+                        explore them again later on this device.
+                    </p>
+                </div>
+
+                <div id="saved-atoms" class="saved-atoms-grid">
+                    <p class="empty-message">
+                        You have not saved any atoms yet.
+                    </p>
+                </div>
+
+                <button id="clear-saved"
+                    type="button"
+                    class="button secondary-button">
+                    Clear Saved Atoms
+                </button>
+            </div>
+        </section>
+
+        <section class="section-container"
+            aria-labelledby="learning-heading">
+            <div class="section-heading">
+                <p class="eyebrow">Understanding Your Results</p>
+                <h2 id="learning-heading">
+                    What Do the Numbers Mean?
+                </h2>
+            </div>
+
+            <div class="information-grid">
+                <article class="information-card">
+                    <h3>Protons Identify the Element</h3>
+                    <p>
+                        Every element has a unique number of
+                        protons. An atom with one proton is
+                        hydrogen, while an atom with eight
+                        protons is oxygen.
+                    </p>
+                </article>
+
+                <article class="information-card">
+                    <h3>Neutrons Determine the Isotope</h3>
+                    <p>
+                        Atoms of the same element can have
+                        different numbers of neutrons.
+                        These variations are called isotopes.
+                        Some isotopes are stable, while
+                        others are radioactive.
+                    </p>
+                </article>
+
+                <article class="information-card">
+                    <h3>Electrons Affect Charge</h3>
+                    <p>
+                        When the number of electrons equals
+                        the number of protons, the atom is
+                        electrically neutral. Different
+                        numbers produce positively or
+                        negatively charged ions.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="footer-brand">Inside the Atom</p>
+            <p>
+                Explore the science behind the building blocks of matter.
+            </p>
+
+            <p>
+                &copy; <span id="currentyear"></span>
+                | Abner Goncalves | WDD 131
+            </p>
+
+            <p id="lastModified"></p>
+
+            <p>
+                <a href="references.html">References</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
